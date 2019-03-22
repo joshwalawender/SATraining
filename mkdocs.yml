@@ -1,0 +1,22 @@
+site_name: SA Basics
+theme:
+    name: readthedocs
+    custom_dir: customization/
+nav:
+    - Topics Common to All Instruments
+        - Starlists: starlists.md
+        - VNC Sessions: vnc_sessions.md
+        - Keywords: keywords.md
+        - KROOT: kroot.md
+        - Instrument Scripts: scripts.md
+        - Keyword Services: services.md
+        - MAGIQ: magiq.md
+        - Target Acquisition: target_acquisition.md
+        - FACSUM: facsum.md
+        - KEOLA: keola.md
+        - SIAS: sias.md
+        - Focus: focus.md
+        - OAs: oas.md
+        - Observers: observers.md
+    - Topics Specific to a Few Instruments
+        - Slitmask Alignment: slitmask_alignment.md
