@@ -4,18 +4,19 @@ theme:
     custom_dir: customization/
 nav:
     - Topics Common to All Instruments
-        - Starlists: starlists.md
-        - VNC Sessions: vnc_sessions.md
         - Keywords: keywords.md
-        - KROOT: kroot.md
-        - Instrument Scripts: scripts.md
         - Keyword Services: services.md
+        - Instrument Scripts: scripts.md
+        - VNC Sessions: vnc_sessions.md
         - MAGIQ: magiq.md
+        - Starlists: starlists.md
         - Target Acquisition: target_acquisition.md
         - FACSUM: facsum.md
         - KEOLA: keola.md
         - SIAS: sias.md
         - Focus: focus.md
+        - conk: conk.md
+        - KROOT: kroot.md
         - OAs: oas.md
         - Observers: observers.md
     - Topics Specific to a Few Instruments
