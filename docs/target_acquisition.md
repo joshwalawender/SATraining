@@ -1,0 +1,20 @@
+# Target Acquisition
+
+The process of target acquisition is highly instrument dependent. There are a few commonalities however.
+
+## Single Object Acquisition
+
+For instruments which are traditional single slit spectrographs with slit viewing cameras (examples include HIRES, LRIS long slit mode, and ESI), the acquisition procedure will depend on whether the science target is visible in the guide camera.  For objects which are visible in the guide camera, the OA will typically handle the acquisition process.  Typically they will slew to the target and place it on the REF (pointing origin)[../pointing_origins/].  If there is any doubt about the identity of the target, they will ask the observers to help verify which object in the field is their target.  MAGIQ has several tools which can help with this.  First, there is a button on MAGIQ labeled "FOV" which will overlay the pointing origins on the guider image.  Second, there is a DSS tab which will show the DSS image for the field.  This tab also has a button to overlay the FOV and a button near it which rotates the DSS image to match the current guider orientation.
+
+Once the target has been identified and centered on the REF (pointing origin)[../pointing_origins/], the OA will sen the target to the relevant instrument pointing origin (e.g. "slit" or a similar name depending on the instrument).  The OA may take a moment to nudge the target on to the slit if they think it is necessary.  Once the target is on slit and the telescope is guiding, the observer can being science exposures with the main instrument.
+
+If the target is faint, the OA can increase the guider exposure time up to about 10-20 seconds, but this significantly slows down the rate at which pointing adjustments can be made.  We can typically identify point sources down to around 20th magnitude.  Sometimes a bit fainter depending on the color of the target, the wavelength response of the guide camera, and the seeing.  If the target is fainter than that, the observer will need to prepare offset stars for pointing.  The offset star should be bright enough to be visible in the guider and have a position that is fairly well known (not typically a problem if modern catalogs were used to find it).  The observer can place one (or more) offset stars in their starlist with the offsets from the star to the target.  Follow the prescription on the (starlist)[https://www2.keck.hawaii.edu/realpublic/observing/starlist.html] page.  They can use this (calculator)[https://www2.keck.hawaii.edu/realpublic/inst/common/offset.php] to help determine the values of the offsets in RA and Dec from the coordinates of the star and the coordinates of the target.
+
+## MOS Mask Alignment
+
+All three instruments which use MOS masks (LRIS, DEIMOS, and MOSFIRE) use the same Slitmask Alignment Tool (SAT).  Check each instrument's web page for details, but the process would typically involve two steps.  First, the "guider coarse align".  This step tried to get the alignment to within about an arcsecond or two so that the fine align step can proceed.  This step uses the offset guider and simply takes the RA, Dec, and PA from the target in the starlist (or the telescope pointing) and downloads both a DSS and a catalog listing of the stars which should be in the guider image for that pointing.  The observer can use the offsets between the expected and measured positions of the guider stars to adjust the pointing.  This is not accurate enough to center targets in the slits becase of uncertainties in flexure between the guide camera and the main instrument FoV.
+
+The second step is to do a "fine alignment".  In this step, the science camera images the field of view through the slitmask.  Several alignment holes which were designed in to the slitmask have stars of know positions in them and the software will measure those positions, compare them to the expected positions, and calculate the RA, Dec, and rotation offsets necessary to center the instrument accurately on the target field.  This is an iterative process and the software guides the observer through the iterations.
+
+
+
