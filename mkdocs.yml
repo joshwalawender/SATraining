@@ -1,23 +1,20 @@
-site_name: SA Basics
+site_name: SA Basic Concepts
 theme:
     name: readthedocs
-    custom_dir: customization/
 nav:
-    - Topics Common to All Instruments
-        - Keywords: keywords.md
-        - Keyword Services: services.md
-        - Instrument Scripts: scripts.md
-        - VNC Sessions: vnc_sessions.md
-        - MAGIQ: magiq.md
-        - Starlists: starlists.md
-        - Target Acquisition: target_acquisition.md
-        - FACSUM: facsum.md
-        - KEOLA: keola.md
-        - SIAS: sias.md
-        - Focus: focus.md
-        - conk: conk.md
-        - KROOT: kroot.md
-        - OAs: oas.md
-        - Observers: observers.md
-    - Topics Specific to a Few Instruments
-        - Slitmask Alignment: slitmask_alignment.md
+    - Keywords: keywords.md
+    - Keyword Services: services.md
+    - Instrument Scripts: scripts.md
+    - VNC Sessions: vnc_sessions.md
+    - MAGIQ: magiq.md
+    - Starlists: starlists.md
+    - Target Acquisition: target_acquisition.md
+    - FACSUM: facsum.md
+    - KEOLA: keola.md
+    - SIAS: sias.md
+    - Focus: focus.md
+    - conk: conk.md
+    - KROOT: kroot.md
+    - OAs: oas.md
+    - Observers: observers.md
+    - Slitmask Alignment: slitmask_alignment.md
