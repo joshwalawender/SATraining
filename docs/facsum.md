@@ -2,7 +2,7 @@
 
 FACSUM and XMET are two simple status displays intended to be used with all instruments.  FACSUM gives basic telescope status while XMET gives weather information.
 
-![FACSUM](FACSUM.png)
+![FACSUM](../images/FACSUM.png)
 
 The screenshow above shows an example FACSUM display.  Across the top are various status indicators for the telescope systems.  For typical observations, they should all be green for normal operations.
 
@@ -19,7 +19,7 @@ The bottom row of display has several sections
     * Drive: This is the physical angle of the drive.  It is unique t each instrument and it does not wrap (i.e. it may not go 0-360).
 * The right hand box contains information on ACS.
 
-![XMET](XMET.png)
+![XMET](../images/XMET.png)
 
 XMET (or just MET) shows weather information.  The most important values for observers are the 4 colored balls next to the dew point differential and precipitation values in the upper right.  If any temperature is within 2 degrees C of the dew point, then that indicator turns red.  Within 5 C, the indicator is yellow.  If the dew point differential is more than 5 C, the indicator is green.
 
