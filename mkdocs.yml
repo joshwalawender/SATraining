@@ -2,6 +2,7 @@ site_name: SA Basic Concepts
 theme:
     name: readthedocs
 nav:
+    - Intro: index.md
     - Keywords: keywords.md
     - Keyword Services: services.md
     - Instrument Scripts: scripts.md
@@ -17,4 +18,4 @@ nav:
     - KROOT: kroot.md
     - OAs: oas.md
     - Observers: observers.md
-    - Slitmask Alignment: slitmask_alignment.md
+    - Pointing Origins: pointing_origins.md
