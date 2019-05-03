@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Target Acquisition - SA Training and Basic Concepts</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Target Acquisition";
+    var mkdocs_page_input_path = "target_acquisition.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> SA Training and Basic Concepts</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Intro</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../keywords/">Keywords</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../services/">Keyword Services</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../scripts/">Instrument Scripts</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../vnc_sessions/">VNC Sessions</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../magiq/">MAGIQ</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../starlists/">Starlists</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Target Acquisition</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#target-acquisition">Target Acquisition</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#single-object-acquisition">Single Object Acquisition</a></li>
+        
+            <li><a class="toctree-l3" href="#mos-mask-alignment">MOS Mask Alignment</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../facsum/">FACSUM</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../keola/">KEOLA</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../sias/">SIAS</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../focus/">Focus</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../conk/">conk</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../kroot/">KROOT</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../oas/">OAs</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../observers/">Observers</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../pointing_origins/">Pointing Origins</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">SA Training and Basic Concepts</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Target Acquisition</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="target-acquisition">Target Acquisition</h1>
+<p>The process of target acquisition is highly instrument dependent. There are a few commonalities however.</p>
+<h2 id="single-object-acquisition">Single Object Acquisition</h2>
+<p>For instruments which are traditional single slit spectrographs with slit viewing cameras (examples include HIRES, LRIS long slit mode, and ESI), the acquisition procedure will depend on whether the science target is visible in the guide camera.  For objects which are visible in the guide camera, the OA will typically handle the acquisition process.  Typically they will slew to the target and place it on the REF (pointing origin)[../pointing_origins/].  If there is any doubt about the identity of the target, they will ask the observers to help verify which object in the field is their target.  MAGIQ has several tools which can help with this.  First, there is a button on MAGIQ labeled "FOV" which will overlay the pointing origins on the guider image.  Second, there is a DSS tab which will show the DSS image for the field.  This tab also has a button to overlay the FOV and a button near it which rotates the DSS image to match the current guider orientation.</p>
+<p>Once the target has been identified and centered on the REF (pointing origin)[../pointing_origins/], the OA will sen the target to the relevant instrument pointing origin (e.g. "slit" or a similar name depending on the instrument).  The OA may take a moment to nudge the target on to the slit if they think it is necessary.  Once the target is on slit and the telescope is guiding, the observer can being science exposures with the main instrument.</p>
+<p>If the target is faint, the OA can increase the guider exposure time up to about 10-20 seconds, but this significantly slows down the rate at which pointing adjustments can be made.  We can typically identify point sources down to around 20th magnitude.  Sometimes a bit fainter depending on the color of the target, the wavelength response of the guide camera, and the seeing.  If the target is fainter than that, the observer will need to prepare offset stars for pointing.  The offset star should be bright enough to be visible in the guider and have a position that is fairly well known (not typically a problem if modern catalogs were used to find it).  The observer can place one (or more) offset stars in their starlist with the offsets from the star to the target.  Follow the prescription on the (starlist)[https://www2.keck.hawaii.edu/realpublic/observing/starlist.html] page.  They can use this (calculator)[https://www2.keck.hawaii.edu/realpublic/inst/common/offset.php] to help determine the values of the offsets in RA and Dec from the coordinates of the star and the coordinates of the target.</p>
+<h2 id="mos-mask-alignment">MOS Mask Alignment</h2>
+<p>All three instruments which use MOS masks (LRIS, DEIMOS, and MOSFIRE) use the same Slitmask Alignment Tool (SAT).  Check each instrument's web page for details, but the process would typically involve two steps.  First, the "guider coarse align".  This step tried to get the alignment to within about an arcsecond or two so that the fine align step can proceed.  This step uses the offset guider and simply takes the RA, Dec, and PA from the target in the starlist (or the telescope pointing) and downloads both a DSS and a catalog listing of the stars which should be in the guider image for that pointing.  The observer can use the offsets between the expected and measured positions of the guider stars to adjust the pointing.  This is not accurate enough to center targets in the slits becase of uncertainties in flexure between the guide camera and the main instrument FoV.</p>
+<p>The second step is to do a "fine alignment".  In this step, the science camera images the field of view through the slitmask.  Several alignment holes which were designed in to the slitmask have stars of know positions in them and the software will measure those positions, compare them to the expected positions, and calculate the RA, Dec, and rotation offsets necessary to center the instrument accurately on the target field.  This is an iterative process and the software guides the observer through the iterations.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../facsum/" class="btn btn-neutral float-right" title="FACSUM">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../starlists/" class="btn btn-neutral" title="Starlists"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../starlists/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../facsum/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
