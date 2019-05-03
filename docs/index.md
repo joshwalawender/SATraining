@@ -1,4 +1,4 @@
-# SA Training
+# SA Training and Basic Concepts
 
 These pages are intended to provide a very high level overview of tools and concepts in use at Keck Observatory that SAs should be familiar with.  These are not intended to be complete documentation, just a high level overview.
 
