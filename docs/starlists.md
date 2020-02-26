@@ -1,10 +1,10 @@
 # Starlists
 
-Starlists are just text files containing the observers targets for the night.  The files are ready by the OA's instance of MAGIQ and can be used to slew the telescope to the selected target and fill in other parameters as needed such as rotator position, non-sidereal tracking rates, offset star information (see [target acquisition](../target_acquisition/)), etc.
+Starlists are just text files containing the observers targets for the night.  The files are read by the OA's instance of MAGIQ and can be used to slew the telescope to the selected target and fill in other parameters as needed such as rotator position, non-sidereal tracking rates, offset star information (see [target acquisition](../target_acquisition/)), etc.
 
 The files need to follow a specific format (see the [starlist page](https://www2.keck.hawaii.edu/realpublic/observing/starlist.html) for details).
 
-If observers have manually created their starlist file or have used a starlist generator such as the one for MOSFIRE, they then need to move the file to a location where the OAs can find it easily.  Traditionally, this is in `/kroot/starlists/(observer or PI name)`, so each observer has a directory which they put their starlists in every time they use Keck.  The "(observer or PI name)" is a free form name which each individual chooses, so there is no set pattern to them.
+If observers have manually created their starlist file or have used a starlist generator such as the one for MOSFIRE, they then need to move the file to a location where the OAs can find it easily.  Traditionally, this is in `/kroot/starlists/(observer or PI name)`, so each observer has a directory which they put their starlists in every time they use Keck.  The "(observer or PI name)" is a free form name which each individual chooses, so there is no set pattern to them though many follow the pattern of `[first initial][last name]` (e.g. `jwalawender`, `jlyke`).
 
 ## Web based starlist tool
 

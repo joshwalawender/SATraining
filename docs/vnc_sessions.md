@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Keck instruments are controlled through VNC sessions.  These sessions are desktops which exist on the VNC server which is *not* the instrument server.  The VNC servers provides the windowing environment, but may or may not run any actual GUIs or keyword services for the instruments.  Some GUIS may be brought up and displayed through ssh (i.e. using `ssh -X`).
+Keck instruments are controlled through VNC sessions.  These sessions are desktops which exist on the VNC server which is __not__ the instrument server.  The VNC servers provides the windowing environment, but may or may not run any actual GUIs or keyword services for the instruments.  Some GUIs may be brought up and displayed through ssh (i.e. using `ssh -X`).
 
 Prior to 2018, all Keck instrument VNC desktops were served from one of two SunOS machines (`svncserver1` and `svncserver2`).  Since then many instrument have transitioned to having their own linux based VNC server.  The instrumeent specific VNC server is typically named with the instrument name (i.e. `mosfire`), however there are aliases to vm-instrumentname (i.e. `vm-mosfire`) as these were created as virtual machines and their network names were chosen to reflect that.
 
