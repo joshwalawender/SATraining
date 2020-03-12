@@ -25,25 +25,25 @@ Fields on the search page are:
 Some fields that I find useful for searches
 
 * Create_date
-  * handles specific dates in mm/dd/yyyy format
-  * handles between 10/01/2019 and 03/11/2020
+    * handles specific dates in mm/dd/yyyy format
+    * handles between 10/01/2019 and 03/11/2020
 * Details 
-  * This is the body of the ticket
-  * Single search term gives most results as the box is “double quoted"
+    * This is the body of the ticket
+    * Single search term gives most results as the box is “double quoted"
 * Dialog
-  * Response to the ticket
+    * Response to the ticket
 * From_x
-  * Sometimes you know who wrote that ticket you want to find
+    * Sometimes you know who wrote that ticket you want to find
 * Keyword
-  * A decent proxy for “Instrument”, which is not a search field
-  * **_Should_** be from a pull-down list so search terms are finite
+    * A decent proxy for “Instrument”, which is not a search field
+    * **_Should_** be from a pull-down list so search terms are finite
 * Topic
-  * The ticket title
-  * Free-form so sometimes hard to search
+    * The ticket title
+    * Free-form so sometimes hard to search
 * UDate
-  * Not as useful as “Create_date"
-  * mm/dd/yy
-  * Entering “20” will give you tickets only from 2020 and the 20th of any month
+    * Not as useful as “Create_date"
+    * mm/dd/yy
+    * Entering “20” will give you tickets only from 2020 and the 20th of any month
 * Example
     * Keyword = mosfire
         * 745 results
