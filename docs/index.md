@@ -17,6 +17,7 @@ These pages are intended to provide a very high level overview of tools and conc
 * [Focus](focus)
 * [conk](conk)
 * [KROOT](kroot)
+* [Nightlogs/Daylogs](nightlogs)
 * [OAs](oas)
 * [observers](observers)
 * [Pointing Origins](pointing_origins)
